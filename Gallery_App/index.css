@@ -1,0 +1,180 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nikea Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Global styles */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #343a40;
+}
+
+nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #495057;
+}
+
+/* Upload page styles */
+#upload-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#upload-form label {
+    font-weight: bold;
+    color: #495057;
+}
+
+#upload-form input,
+#upload-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.custom-upload-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 48px;
+}
+
+.custom-upload-btn:hover {
+    background-color: #218838;
+}
+
+/* Gallery page styles */
+#gallery-page {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+#gallery-page h1 {
+    font-weight: 600;
+    color: rgb(71, 71, 173);
+    font-family: 'Ultra', sans-serif;
+
+}
+
+.photo-thumbnail {
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+    transition: transform 0.2s ease-in-out;
+}
+
+.photo-thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Photo details page styles */
+#photo-details-page {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#full-size-photo {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#photo-details-page h1,
+#photo-details-page h2 {
+    font-family: 'Sofia', sans-serif;
+    color: #343a40;
+}
+
+#photo-details-page p {
+    color: #495057;
+}
+
+#photo-details-page button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#photo-details-page button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #upload-page {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .photo-thumbnail {
+        height: 150px;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #upload-page {
+        margin: 10px auto;
+    }
+
+    .photo-thumbnail {
+        height: 120px;
+    }
+}
